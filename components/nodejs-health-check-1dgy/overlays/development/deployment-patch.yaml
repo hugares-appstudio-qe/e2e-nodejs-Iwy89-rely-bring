@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: nodejs-health-check-1dgy
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/hugares/rhtap-demo-ibtq-tenant/e2e-nodejs/nodejs-health-check-1dgy@sha256:560d40ea2903ad093fca84e6caf5ed94bf13e12bdbbbe0352fb4cefac94f073d
+        name: my-nodejs
+        resources: {}
+status: {}
